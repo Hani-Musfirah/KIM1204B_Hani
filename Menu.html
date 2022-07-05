@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="icon" type="image/x-icon" href="311 images/favicon.png">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+body {
+  font-family: timesnewroman;
+  padding: 10px;
+  background: dimgrey;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: silver;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: dimgrey;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: dimgrey;
+  margin-top: 20px;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: dimgrey;
+}
+
+.flex-container > div {
+  background-color: #fff8dc;
+  width: 90px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 140px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+} 
+
+.mySlides {display:none;}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:black;">OUR MENU</h1>
+  <h3 style="font-family:times new roman;" "color:black;">Save room for desserts</h3>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="employee.html">Employees</a>
+  <a href="Form.html">Cafe Review</a>
+  <a href="aboutus.html">About</a>
+</div>
+
+<br><br>
+
+<center>
+<div class="flex-container">
+<div class="gallery">
+  <a target="_blank" href="egg tart.jpg">
+    <img src="egg tart.jpg" alt="Egg tart" width="600" height="400">
+  </a>
+  <h4><div class="desc">Egg Tart</div></h4>
+	<center><p>RM2.50</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="croissant.jpg">
+    <img src="croissant.jpg" alt="Croissant" width="600" height="400">
+  </a>
+  <h4><div class="desc">Croissant</div></h4>
+	<center><p>RM8.00</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="eclair.jpg">
+    <img src="eclair.jpg" alt="Eclair" width="600" height="400">
+  </a>
+  <h4><div class="desc">Eclair</div></h4>
+	<center><p>RM8.00</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="bomboloni.jpg">
+    <img src="bomboloni.jpg" alt="Bomboloni" width="600" height="400">
+  </a>
+  <h4><div class="desc">Bomboloni</div></h4>
+	<center><p>RM2.00</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="macaron.jpg">
+    <img src="macaron.jpg" alt="Macaron" width="600" height="400">
+  </a>
+  <h4><div class="desc">Macaron</div></h4>
+	<center><p>RM2.00</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="hazelnut latte.jpg">
+    <img src="hazelnut latte.jpg" alt="Hazelnut Latte" width="600" height="400">
+  </a>
+  <h4><div class="desc">Hazelnut Latte</div></h4>
+	<center><p>RM8.50</p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="cappucino.jpg">
+    <img src="cappucino.jpg" alt="Cappucino" width="600" height="400">
+  </a>
+  <h4><div class="desc">Cappucino</div></h4>
+	<center><p>RM7.00<p></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mocha.jpg">
+    <img src="mocha.jpg" alt="Mocha" width="600" height="400">
+  </a>
+  <h4><div class="desc">Mocha</div></h4>
+	<center><p>RM9.00</p></center>
+</div>
+</div>
+
+<br><br><br>
+
+<audio controls autoplay>
+  <source src="ffy.mp3" type="audio/ogg">
+  <source src="ffy.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<br><br><br>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="counter.jpg" style="width:100%">
+  <img class="mySlides" src="coffee.jpg" style="width:100%">
+  <img class="mySlides" src="food.jpg" style="width:100%">
+  <img class="mySlides" src="counter2.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer">
+  <p style="color:white;">Instagram : @Monocafe_cf || Email : monocf@gmail.com</p>
+  <i><p style="color:white;">&copy;Mono Cafe 2022</p></i>
+</div>
+</center>
+
+</body>
+</html>
